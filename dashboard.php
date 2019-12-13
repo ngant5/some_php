@@ -1,7 +1,6 @@
 <?php
-//require "./session.php";
+require "./session.php";
 require "./connection.php";
-
 $conn = conn_db();
 
 $sql = "SELECT * FROM product";
@@ -21,8 +20,9 @@ mysqli_close($conn);
     table, th, td{border: 1px solid grey};
 </style>
 
-<button> <a href="create.php"> ADD </a></button>
-<table>
+<h4><?="Welcome {$_SESSION['user']["fullname"]} !" ?> Click here to <a href="logout.php" tite="Logout">Logout.</h4>
+<button><a href="create.php" style="color: blue;"> ADD PRODUCT</a></button>
+<table style="margin: 20px;">
     <tr>
         <th>ID</th>
         <th>PRODUCT NAME</th>

@@ -13,6 +13,4 @@ function conn_db() {
 
     return $conn;
 }
-
-
 ?>

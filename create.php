@@ -1,4 +1,6 @@
 <?php
+require "./session.php";
+require "./connection.php";
 $sql_msg = "";
 $nameErr = $quanlityErr = $statusErr = $userErr = "";
 $name = $quanlity = $status = $user = "";
@@ -49,6 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <?=$sql_msg ?>
+<h4><?="Hello {$_SESSION['user']["fullname"]} !" ?></h4>
 
 <form method="POST" action="create.php">
     <table>

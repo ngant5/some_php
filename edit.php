@@ -1,5 +1,5 @@
 <?php
-//require "./session.php";
+require "./session.php";
 require "./connection.php";
 
 $conn = conn_db();

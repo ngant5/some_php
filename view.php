@@ -2,7 +2,7 @@
     table, th, td{border: 1px solid grey};
 </style>
 <?php
-//require "./session.php";
+require "./session.php";
 require "./connection.php";
 
 $conn = conn_db();
@@ -16,6 +16,7 @@ if(isset($_GET["id"]) && $_GET["id"] > 0) {
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         ?>
+        <h4><?="Welcome {$_SESSION['user']["fullname"]} !" ?> Click here to <a href="logout.php" tite="Logout">Logout.</h4>
         <table>
             <tr>
                 <th>ID</th>
