@@ -40,9 +40,9 @@ mysqli_close($conn);
         <td><?=$value['quanlity'] ?></td>
         <td><?=$value['status'] == 1 ? "Active" : "Deactive" ?></td>
         <td>
-            <a href="<?="view.php?id={$value['id']}" ?>"> View </a> ||
-            <a href="<?="edit.php?id={$value['id']}" ?>"> Edit </a> ||
-            <a href="<?="delete.php?id={$value['id']}" ?>"> Delete </a>
+            <a href="<?="view.php?id={$value['id']}" ?>" target="_blank"> View </a> ||
+            <a href="<?="edit.php?id={$value['id']}" ?>" target="_blank"> Edit </a> ||
+            <a href="<?="delete.php?id={$value['id']}" ?>" target="_blank"> Delete </a>
         </td>
         <td><?=$value['user'] ?></td>
     </tr>

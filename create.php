@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </tr>
         <tr>
             <td>Quanlity:</td>
-            <td><input type="text" name="quanlity" id=""><span><?=$quanlityErr ?></span></td>
+            <td><input type="number" name="quanlity" id=""><span><?=$quanlityErr ?></span></td>
         </tr>
         <tr>
             <td>Status:</td>
